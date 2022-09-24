@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body> 
+    <h1 id="title">Free-Fire Survey Form</h1>
+    <p class="header" id="description">Thank you for giving your time to help us improving our Game(Free-Fire)</p>
+    <fieldset>
+      <form id="survey-form">
+        <label id="name-label" class="quest">Enter Your Full Name: <input type="text" class="basics" id="name" placeholder="Full Name" required></label>
+        <label id="email-label" class="quest">Enter Your Email: <input type="email" class="basics" id="email" placeholder="abc@gmail.com" required></label>
+        <label id="number-label" class="quest">Enter Your Age : <input type="number" class="basics" id="number" min=13 max=100 placeholder="13"></label>
+        <p>Whats your age ?</p>
+        <select id="dropdown">
+          <option>..select..</option>
+          <option>Below 50</option>
+          <option>Above 50</option>
+        </select>
+        <p>Would You Recommend us to your friend ?</p>
+        <label><input type="radio" name="yes-no" value="yes" checked> Yes</label>
+        <label><input type="radio" name="yes-no" value="no"> No</label>
+        <p>What would you want us to inprove ?</p>
+        <label><input type="checkbox" value="Graphics" checked> Graphics</label>
+        <label><input type="checkbox" value="Events"> Events</label>
+        <label><input type="checkbox" value="Anti hackers system"> Anti hackers system</label>
+        <label><input type="checkbox" value="Armory"> Armory</label>
+        <label><input type="checkbox" value="Bundels"> Bundles</legend>
+        <p>Write down some more suggestions :</p>
+        <textarea placeholder="It could be more beautiful"></textarea>
+        <input type="submit" id="submit"> 
+      </form>
+    </fieldset>
+  </body>
+</html>
